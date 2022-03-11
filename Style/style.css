@@ -1,0 +1,145 @@
+.main_recept{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+    
+    position: absolute;
+    width: 99px;
+    height: 29px;
+    left: 120px;
+    top: 33px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #FDB100;
+
+    transition-duration: .5s;
+}
+.main_recept:hover{
+    color: #ffffff;
+}
+
+.main_button{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+    
+    position: absolute;
+    width: 76px;
+    height: 22px;
+    left: 299px;
+    top: 44px;
+    
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #3A3C41;
+
+    transition-duration: .5s;
+}
+
+.main_button:hover{
+    color: #ffffff;
+}
+
+.recept{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+    
+    position: absolute;
+    width: 82px;
+    height: 22px;
+    left: 415px;
+    top: 44px;
+    
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  
+    color: #9196A1;
+
+    transition-duration: .5s;
+}
+
+.recept:hover{
+    color: #ffffff;
+}
+
+.favourites{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+    
+    position: absolute;
+    width: 106px;
+    height: 22px;
+    left: 537px;
+    top: 44px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #9196A1;
+
+    transition-duration: .5s;
+}
+
+.favourites:hover{
+    color: #ffffff;
+}
+
+.enter{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+    position: absolute;
+    width: 60px;
+    height: 22px;
+    right: 120px;
+   
+    top: 44px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+
+    color: #FDB100;
+}
+
+.image_1{
+    background: url(.jpg), #F0F0F0;
+    border-radius: 0px 0px 0px 200px;
+
+    position: absolute;
+    width: 602px;
+    height: 800px;
+    top: 0px;
+    left: 1318px;
+}
+
+.image_2{
+    
+    position: absolute;
+    height: 16px;
+    right: 185px;
+    top: 50px;
+
+}
+
+.ellips{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 187px;
+    top: 24px;
+    
+    border-radius: 20px;
+
+    background: #FDB100;
+}
