@@ -4,8 +4,8 @@
     position: absolute;
     width: 99px;
     height: 29px;
-    left: 120px;
-    top: 33px;
+    left: 110px;
+    top: 20px;
     
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -14,12 +14,8 @@
     line-height: 29px;
     
     color: #FDB100;
+}
 
-    transition-duration: .5s;
-}
-.main_recept:hover{
-    color: #ffffff;
-}
 
 .main_button{
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
@@ -28,16 +24,17 @@
     width: 76px;
     height: 22px;
     left: 299px;
-    top: 44px;
-    
+    top: 49.5px;
+
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-
+ 
     color: #3A3C41;
 
+    text-decoration: none;
     transition-duration: .5s;
 }
 
@@ -52,16 +49,17 @@
     width: 82px;
     height: 22px;
     left: 415px;
-    top: 44px;
-    
+    top: 49.5px;
+
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-  
+
     color: #9196A1;
 
+    text-decoration: none;
     transition-duration: .5s;
 }
 
@@ -76,7 +74,7 @@
     width: 106px;
     height: 22px;
     left: 537px;
-    top: 44px;
+    top: 49.5px;
 
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
@@ -86,6 +84,7 @@
 
     color: #9196A1;
 
+    text-decoration: none;
     transition-duration: .5s;
 }
 
@@ -100,16 +99,22 @@
     height: 22px;
     right: 120px;
    
-    top: 44px;
+    top: 49.5px;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
+
     text-decoration: none;
+    transition-duration: .5s;
 
     color: #FDB100;
+}
+
+.enter:hover{
+    color: #fad36a;
 }
 
 .image_1{
@@ -137,7 +142,7 @@
     width: 30px;
     height: 30px;
     right: 187px;
-    top: 24px;
+    top: 30px;
     
     border-radius: 20px;
 
