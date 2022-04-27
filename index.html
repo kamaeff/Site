@@ -1,93 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr" style="--scroll-fixed-width:1076px; --layout-width:1076px;">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="Image/icon.ico" type="image/-icon">
-        <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-        <title>Recpies</title>    
-    </head>
+<head>
+    <link rel="shortcut icon" href="Image/icon.ico" type="image/-icon">
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <title>Recpies</title>
+</head>
 
-    <body bgcolor="#E5E5E5">
-        <link href="Style/style.css" rel="stylesheet">
-        <header>
-            <div>
-                <p class="border"></p>    
-                <p class="main_recept">Recipes</p>
-                <a href="#" class="main_button">Главная</a>
-                <a href="#" class="recept">Рецепты</a>
-                <a href="#" class="favourites">Избранное</a>
-            </div>
-        </header>
+<body>
+<link href="Style/style.css" rel="stylesheet">
+<header>
+    <div>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" class="main_recept">Recipes</a></li>
+                <li><a href="#" class="main_button">Главная</a></li>
+                <li><a href="#" class="recept">Рецепты</a></li>
+                <li><a href="#" class="favourites">Избранное</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-        <main>  
-            <img src="Image/Rectangle 1.png" class="image_1">
-            <!-- кнопка войти -->
-            <div>
-                
-                <p class="ellips" ></p>
-                <img src="Image/Vector.png" class="image_2">  
-                <a href="#" class="enter">Войти</a>
-                
-            </div>
-            
-            <!-- Контент -->
-            <div>
-                <h1 class="content">Готовь и делись своими рецептами</h1>
-                <p class="note_1">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
-                <p class="Rect1"></p>
-                <a href="#" class="add">Добавить рецепт</a>
-                <img src="Image/Vector_2.png" class="Vector"></p>
-                <a href="#" class="enter2">Войти</a>
-                <p class="Rect2"></p>
-            </div>
+<main>
+    <!-- кнопка войти -->
+    <div>
+        <div>
+            <img src="Image/Rectangle 1.png" class="image_right">
+        </div>
+        <div class="ellips">
+            <img src="Image/Vector.png" class="image_authorization">
+        </div>
+        <ul class="autorization_nav2">
+            <li><a href="#" class="authorization">Войти</a></li>
+        </ul>
+    </div>
 
-            <!-- Умная сортировка по тегам -->
-            <div>
-                <h2 class="content2">Умная сортировка по тегам</h2>
-                <p class="note_2">Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории</p>
 
-                <p class="rect1"></p>
-                <p class="icon1"></p>
-                <img src="Image/ic-menu.png" class="ic_menu">
-                <p class="note3">Простые блюда</p>
-                <p class="note3_1">Время приготвления таких блюд не более 1 часа</p>
-               
-                <p class="rect2"></p>
-                <p class="icon2"></p>
-                <img src="Image/Vector3.png" class="Vector3">
-                <p class="note4">Детское</p>
-                <p class="note4_1">Самые полезные блюда которые можно детям любого возраста</p>
-                
-                <p class="rect3"></p>
-                <p class="icon3"></p>
-                <img src="Image/Vector 4.png" class="Vector4">
-                <p class="note5">От шеф-повара</p>
-                <p class="note5_1">Требуют умения, времени и терпения, зато как в ресторане</p>
+    <!-- Контент -->
+    <section>
+        <div>
+            <h1 class="h1_header">Готовь и делись своими рецептами</h1>
+            <p class="h1_header_coment">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
+        </div>
 
-                <p class="rect4"></p>
-                <p class="icon4"></p>
-                <img src="Image/Vector5.png" class="Vector5">
-                <p class="note6">На праздник</p>
-                <p class="note6_1">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
-            </div>
+        <div class = "add_reseprs-Enter">
+            <a href="#" class="add_button_ellips add_button"><img src="Image/Vector_2.png" class="plus_img">Добавить рецепт</a>
+            <a href="#" class="second_enter second_enter_ellips">Войти</a>
+        </div>
+    </section>
 
-            <!-- Центарльная часть -->
-            <div>
-                <img src="Image/Rectangle 8.png" class="image3">
+    <!-- Умная сортировка по тегам -->
+    <div>
+        <h2 class="h2_header">Умная сортировка по тегам</h2>
+        <p class="h2_header-note">Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории</p>
+    </div>
+    <section class = "Clever_sort">
+        <div class = "border1">
+            <img src="Image/ic-menu.png" class="ic_menu_png">
+            <p class="note3-heading">Простые блюда</p>
+            <p class="note3">Время приготвления таких блюд не более 1 часа</p>
+        </div>
 
-            </div>
+        <div class = "border1">
+            <img src="Image/Vector3.png" class="ic_menu_png">
+            <p class="note3-heading">Детское</p>
+            <p class="note3">Самые полезные блюда которые можно детям любого возраста</p>
+        </div>
 
-        </main>
+        <div class = "border1">
+            <img src="Image/Vector 4.png" class="ic_menu_png">
+            <p class="note3-heading">От шеф-повара</p>
+            <p class="note3">Требуют умения, времени и терпения, зато как в ресторане</p>
+        </div>
 
-        <footer>
-            
+        <div class = "border1">
+            <img src="Image/Vector5.png" class="ic_menu_png">
+            <p class="note3-heading">На праздник</p>
+            <p class="note3">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
+        </div>
+    </section>
 
-        </footer>
 
-    </body>
+    <!-- Центарльная часть -->
+    <section class = "Center">
+        <div>
+            <img src="Image/Rectangle 8.png"class = "Center_img">
+        </div>
+
+        <div class = "Center_like">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z" fill="black"/>
+            </svg>
+        </div>
+
+        <div class = "Center_clock">
+            <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.5" d="M12 0H6V2H12V0ZM8 13H10V7H8V13ZM16.03 6.39L17.45 4.97C17.02 4.46 16.55 3.98 16.04 3.56L14.62 4.98C13.07 3.74 11.12 3 9 3C4.03 3 0 7.03 0 12C0 16.97 4.02 21 9 21C13.98 21 18 16.97 18 12C18 9.88 17.26 7.93 16.03 6.39ZM9 19C5.13 19 2 15.87 2 12C2 8.13 5.13 5 9 5C12.87 5 16 8.13 16 12C16 15.87 12.87 19 9 19Z" fill="black"/>
+            </svg>
+        </div>
+
+        <div>
+            <img src="Image/Recept_of_the_day.png" class = "Center_img_ROD">
+        </div>
+
+        <div>         
+            <img src="Image/Emoji.png" class="Center_ellips-Emoji">
+            <img src="Image/Emoji-eye.png" class="Center_ellips-Emoji-eye">
+        </div>
+
+        <div>
+            <h2 class="h2_main-title">Тыквенный супчик На кокосовом молоке</h2>
+            <p class="h2_main-title-note">Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост!</p>
+        </div>
+
+    </section>
+
+    <center>
+        <div class="bottom bottom_h2">Поиск рецептов</div>
+        <div class="bottom bottom_h2-note">Введите примерное название блюда, а мы по тегам найдем его</div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="footer_recipe">Recipes</div>
+
+    </div>
+</footer>
+
+</body>
 
 
 </html>
