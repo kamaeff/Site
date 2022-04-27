@@ -421,6 +421,8 @@ input {
     height: 73px;
     left: 420px;
     top: 1820px;
+    padding-left: 40px;
+
     outline: none;
     border: 0px solid black;
     border-radius: 5px;
@@ -443,6 +445,9 @@ input {
     width: 200px;
     left: 1290px;
     top: 1745px;
+    outline: none;
+    border: 0px solid black;
+    border-radius: 5px;
 
     font-style: normal;
     font-weight: 600;
@@ -450,13 +455,17 @@ input {
     line-height: 22px;
     text-align: center;
     text-transform: capitalize;
-    color: #FFFFFF;;
     display: flex;
     align-items: center;
-    justify-content: center;;
-
+    justify-content: center;
+    color: #FFFFFF;
     background: #FDB100;
     border-radius: 16px;
+}
+
+.Search{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .bottom_nav{
@@ -487,4 +496,34 @@ input {
     color: #808080;
 }
 
+footer{
+    min-height: 113px;
+    background: #FBF9F4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 
+}
+
+.bottom_item-recept{
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    left: 120px;
+
+    color: #FDB100;
+}
+
+.bottom_item-recipes2021{
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    left: 1540px;
+}
