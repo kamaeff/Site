@@ -1,4 +1,7 @@
-//My function
-function change_color(elem, color) {
-    elem.style.background = color;
-  }
+function Click(){
+  updateLike(++counter);
+}
+
+function updateLike(val){
+  document.getElementById("label").innerHTML = val;
+}

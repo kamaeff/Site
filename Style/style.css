@@ -4,37 +4,29 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #E5E5E5;
-    position: relative;
+    background: #FEFEFB;
+}
+
+.header{
+	display: flex;
+	align-items: center;
+	margin-left: 120px;
 }
 
 .nav{
     text-decoration: none;
     list-style: none;
-    margin: 0; padding: 0;
-    position: absolute;
-    top: 44px;
-    left: 70px;
+	margin-top: 20px;
 }
 
 .nav li {
     display: inline-block; /* Строчно-блочный элемент */
-    padding: 0 0 0 60px;
+    padding-left: 60px;
 }
 
 .autorization_nav2{
     text-decoration: none;
     list-style: none;
-}
-
-.border {
-    background-color: #dddddd;
-    background-clip: padding-box;
-    border-radius: 40px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
 }
 
 .main_recept{
@@ -96,18 +88,21 @@ body {
     color: #000000;
 }
 
+.login{
+	display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
 .authorization{
-    position: absolute;
-    top: 48px;
-    right: 120px;
+
     font-style: normal;
+	margin-right: 50px;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-
     text-decoration: none;
     transition-duration: .5s;
-
     color: #FDB100;
 }
 
@@ -121,17 +116,17 @@ body {
     right: 0px;
     width: 602px;
     height: 800px;
+	z-index: -1;
 }
 
 .ellips{
-    position: absolute;
-    top: 40px;
-    right: 194px;
-    border-radius: 20px;
+	margin-right: 10px;
+	border-radius: 20px;
     background: #FDB100;
     width: 38px;
     height: 38px;
 }
+
 
 .image_authorization{
     position: absolute;
@@ -140,9 +135,8 @@ body {
 }
 
 .h1_header{
-    position: absolute;
-    top: 211px;
-    left: 120px; 
+	padding-left: 120px;
+	padding-top:130px;
     width: 1000px;
     font-style: normal;
     font-weight: 700;
@@ -153,30 +147,36 @@ body {
 }
 
 .h1_header_coment{
-    position: absolute;
-    left: 120px;
-    top: 450px;
+    display: flex;
+    padding-top: 10px;
+	padding-left: 120px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    /* or 156% */
+
 
     color: #4A525A;
 }
 
-.add_button_ellips{
-    position: relative;
-    left: 120px;
-    top: 540px;
-    padding: 15px;
-    background: #FDB100;
-    border-radius: 16px;
-    padding: 16px 35px 16px 76px;
+.add_recipes-Enter{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 42px;
+    gap: 24px;
 }
 
+.add_button_ellips{
+    display: flex;
+    background: #FDB100;
+    border-radius: 16px;
+    padding: 16px 35px 16px 35px;
+}
 
 .add_button{
-    position: absolute;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -187,15 +187,14 @@ body {
 }
 
 .plus_img {
-    position: absolute;
-    left: 39px;
-    top: 20px;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
+    padding-top: 6px;
 }
 
 .second_enter{
-    position: absolute;
-    left: 422px;
-    top: 540px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -219,9 +218,8 @@ body {
 }
 
 .h2_header{
-    position: absolute;
-    top: 822.79px;
-    left: 120px;
+    padding-left: 120px;
+    padding-top: 300px;
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -231,13 +229,13 @@ body {
 }
 
 .h2_header-note{
-    position: absolute;
-    top: 911px;
-    left: 120px;
+    padding-left: 120px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 32px;
+    /* or 178% */
+
 
     color: #4A525A;
 }
@@ -247,13 +245,14 @@ body {
     border-radius: 12px;
 }
 
-.Clever_sort{
-    position: absolute;
-    top: 1085px;
-    left: 80px;
+.clever_sort{
+    display: flex;
+	padding-left: 80px;
+    padding-top: 42px;
 }
 
 .border1{
+    margin-top: 42px;
     position: relative;
     display: inline-block;
     margin: 0 29px;
@@ -301,41 +300,43 @@ body {
 
 .Center{
     position: relative;
-    left: 120px;
-    top: 1529px;
+    display: flex;
+    padding-left: 115px;
+    padding-top: 157px;
 }
 
 .Center_img{
-    position: absolute;
-    width: 543px;
-    height: 543px;
-
+    
     background: url(.jpg), #F0F0F0;
     border-radius: 72px 0px;
 }
 
-.Center_like{
-    position: absolute;
-    left: 1075px;
-    opacity: 0.5;
+.like_time{
+    position: relative;
+    left: 500px;
 }
 
-.Center_clock{
-    position: absolute;
-    left: 1162px;
-    top: -1.5px;
+.like{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+indent{
+    color:#25292D;
 }
 
 .Center_img_ROD{
     position: absolute;
-    left: 715px;
-    top: 45px;
+    left: 751px;
+    top: 254px;
+
 }
 
 .Center_ellips-Emoji{
-    position: relative;
-    left: 720px;
-    top: 60px;
+    position: absolute;
+    left: 757px;
+    top: 270px;
     border: 20px solid #FDB100;
     border-radius: 100px;
 
@@ -344,20 +345,20 @@ body {
 
 .Center_ellips-Emoji-eye{
     position: absolute;
-    left: 767px;
-    top: 95px;
+    left: 787px;
+    top: 304px;
 }
 
 .Center_ellips-Emoji-eye2{
     position: absolute;
-    left: 750px;
-    top: 95px;
+    left: 805px;
+    top: 304px;
 }
 
 .h2_main-title{
-    position: relative;
-    left: 720px;
-    top: 50px;
+    position: absolute;
+    left: 751px;
+    top: 350px;
     width: 513px;
     height: 120px;
     font-style: normal;
@@ -372,9 +373,10 @@ body {
 
 .h2_main-title-note{
     position: absolute;
+    left: 751px;
+    top: 500px;
     width: 513px;
     height: 128px;
-    left: 720px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -384,105 +386,88 @@ body {
     font-feature-settings: 'case' on;
 
     color: #4A525A;
-}
+    }
 
 .bottom{
-    position: relative;
-    top: 1800px;
+    align-items: center;
+    padding-top: 150px;
 }
 
 .bottom_h2{
-    text-align: center;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
-
+    line-height: 51px;
+    text-align: center;
     color: #25292D;
 }
 
-.bottom_h2-note{  
+.bottom_h2-note{
+    padding-top: 16px;  
     font-weight: 300;
     font-size: 18px;
     line-height: 32px;
     text-align: center;
-    font-feature-settings: 'case' on;
 
     color: #4A525A;
 }
 
-input {
-    position: relative;
+.bottom_search{
     display: flex;
-    width: 800px;
-    height: 73px;
-    left: 420px;
-    top: 1820px;
-    padding-left: 40px;
+    gap: 16px;
+    align-items: center;
+    margin-left: 278px;
+    margin-top: 64px;
+}
 
+.bottom_search-input{
+    height: 73px;
     outline: none;
     border: 0px solid black;
     border-radius: 5px;
-
     background: #FFFFFF;
     box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
     border-radius: 16px;
 
+
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     text-transform: capitalize;
+    padding-left: 32px;
 
     color: rgba(37, 41, 45, 0.5);
-  }
+}
 
-.bottom_enter{
-    position: relative;
-    height: 73px;
-    width: 200px;
-    left: 1290px;
-    top: 1745px;
-    outline: none;
-    border: 0px solid black;
-    border-radius: 5px;
+.bottom_search-button{
+    padding: 27px 42px 27px 42px;
+    background: #FDB100;
+    border-radius: 16px;
 
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    text-align: center;
-    text-transform: capitalize;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    background: #FDB100;
-    border-radius: 16px;
-}
-
-.Search{
+    text-align: center;
+    text-transform: capitalize;
     text-decoration: none;
+
     color: #FFFFFF;
 }
 
 .bottom_nav{
-    text-decoration: none;
-    list-style: none;
-    margin: 0; padding: 0;
-    position: absolte;
-    top: -40px;
-    left: 390px;
-}
-
-.bottom_nav li {
-    display: inline-block; /* Строчно-блочный элемент */
-    padding: 0 0 0 30px;
+    display: flex;
+    margin-top: 5px;
+    padding-left: 255px;
 }
 
 .bottom_nav-item{
+    text-decoration: none;
+    list-style: none;
+	margin-top: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -491,39 +476,48 @@ input {
 
     display: flex;
     align-items: center;
-    text-decoration: none;
 
     color: #808080;
 }
 
+.bottom_nav li {
+    display: inline-block; /* Строчно-блочный элемент */
+    padding-left: 30px;
+}
+
 footer{
+    display: flex;
+    margin-top: 106px;
     min-height: 113px;
     background: #FBF9F4;
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: left;
 
 }
 
-.bottom_item-recept{
-    position: relative;
+.footer_item-recept{
+    padding-left: 120px;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
     /* identical to box height */
-    left: 120px;
+
 
     color: #FDB100;
 }
 
-.bottom_item-recipes2021{
-    position: relative;
+.footer_item-recipes2021{
+    margin-left: auto;
+    margin-right: 119px;
+    width: 151px;
+    height: 24px;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    left: 1540px;
+
+    color: #4A525A;
 }
