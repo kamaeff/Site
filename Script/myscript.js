@@ -1,15 +1,8 @@
 let counter = 0;
-function Click() {
-    updateLike(counter=1);
-}
-
-function updateLike(val) {
-    document.getElementById("label").innerHTML = val;
-}
 
 function valid()
 {
-    let form = document.querySelector('.formRegistr')
+    let form = document.querySelector('.header__form_registr')
     let search = form.querySelectorAll('.search')
     let errors = form.querySelectorAll('.error');
     let password = form.querySelector('.search--password')
@@ -31,6 +24,7 @@ function valid()
             let error = document.createElement('div')
             error.className = 'error'
             error.style.color = 'red'
+            error.style.fontSize = '12px'
             error.innerHTML = 'Заполните поле'
             form[i].parentElement.insertBefore(error, search[i])
             flag = false
@@ -63,10 +57,18 @@ function openSection(idSection) {
 function closeSection()
 {
     let content;
-    content = document.getElementsByClassName("content");
+    content = document.getElementsByClassName("header__form");
     for (i = 0; i < content.length; i++) {
         content[i].style.display = "none";
     }
     document.body.style.position = '';
     document.body.style.top = '';
+}
+
+function Click() {
+    updateLike(++counter);
+}
+
+function updateLike(val) {
+    document.getElementById("label").innerHTML = val;
 }

@@ -29,6 +29,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 120px;
+  position: relative;
 }
 .header__main_recept {
   font-style: normal;
@@ -104,6 +105,7 @@ footer {
   padding: 11px;
 }
 .header__login_ellips-authorization {
+  cursor: pointer;
   font-style: normal;
   margin-right: 50px;
   font-weight: 600;
@@ -121,6 +123,307 @@ footer {
   width: 602px;
   height: 800px;
   z-index: -1;
+}
+.header__form {
+  display: none;
+  position: absolute;
+  padding: 60px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+          box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+  border-radius: 24px;
+  left: 300px;
+  top: 300px;
+  z-index: 2;
+}
+.header__form_login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  gap: 24px;
+}
+.header__form_login-enter {
+  cursor: pointer;
+  background: #FDB100;
+  border-radius: 16px;
+  padding: 16px 109px 16px 109px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.header__form_login-pass {
+  cursor: pointer;
+  padding: 16px 71px 16px 71px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #FDB100;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  color: #FDB100;
+}
+.header__form-headertext {
+  font-style: normal;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 125% */
+  color: #25292D;
+}
+.header__form-headersubtext {
+  margin-top: 30px;
+  font-style: normal;
+  width: 577px;
+  height: 56px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  -webkit-font-feature-settings: "case" on;
+          font-feature-settings: "case" on;
+  color: #4A525A;
+}
+.header__form_registr {
+  width: 580px;
+}
+.header__form_registr-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 125% */
+  text-transform: capitalize;
+  color: #25292D;
+}
+.header__form_registr-input {
+  margin-top: 47px;
+}
+.header__form_registr-input-item {
+  width: 580px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #25292D;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  margin-top: 20px;
+  padding-left: 26px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(37, 41, 45, 0.5);
+}
+.header__form_registr-input-com {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  /* identical to box height, or 233% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(37, 41, 45, 0.3);
+}
+.header__form_registr-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__form_registr-pass-input {
+  width: 278px;
+  height: 50px;
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  margin-right: 24px;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 26px;
+  color: rgba(37, 41, 45, 0.5);
+}
+.header__form_registr-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 39px;
+  gap: 22px;
+}
+.header__form_registr-login-reg {
+  cursor: pointer;
+  background: #FDB100;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 16px 39px 16px 39px;
+  color: #FFFFFF;
+}
+.header__form_registr-login-no {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #FDB100;
+  padding: 16px 100px 16px 100px;
+  border: 1px solid #FDB100;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+}
+.header__form_registr-ihave {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 47px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FDB100;
+  border-bottom-color: #FDB100;
+  text-decoration: none;
+}
+.header__form_registr-ihave:hover {
+  border-bottom: 1px dashed #FDB100;
+}
+.header__form_enter-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 125% */
+  text-transform: capitalize;
+  color: #25292D;
+}
+.header__form_enter-input {
+  margin-top: 49px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.header__form_enter-input-item {
+  border: 1px solid rgba(145, 150, 161, 0.4);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 26px;
+  color: rgba(37, 41, 45, 0.5);
+  width: 580px;
+  height: 50px;
+}
+.header__form_enter-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 46px;
+  gap: 22px;
+}
+.header__form_enter-login-reg {
+  cursor: pointer;
+  background: #FDB100;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 16px 109px 16px 109px;
+  color: #FFFFFF;
+}
+.header__form_enter-login-no {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  padding: 16px 100px 16px 100px;
+  color: #FDB100;
+  border: 1px solid #FDB100;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 16px;
+}
+.header__form_enter-ihave {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FDB100;
+  border-bottom-color: #FDB100;
+  text-decoration: none;
+}
+.header__form_enter-ihave:hover {
+  border-bottom: 1px dashed #FDB100;
+}
+
+.button1 {
+  cursor: pointer;
+  z-index: 2;
+  color: rgba(145, 150, 161, 0.4);
+  border: none;
+  outline: none;
+}
+
+.end {
+  position: absolute;
+  right: 25px;
+  top: 27px;
 }
 
 .content {

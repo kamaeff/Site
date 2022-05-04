@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     margin-left: 120px;
+    position: relative;
     // .header__main
 
     &__main {
@@ -105,6 +106,7 @@
         // .header__login_ellips-authorization
 
         &_ellips-authorization {
+            cursor: pointer;
             font-style: normal;
             margin-right: 50px;
             font-weight: 600;
@@ -131,4 +133,379 @@
             z-index: -1;
         }
     }
+
+    &__form {
+        display: none;
+        position: absolute;
+        padding: 60px;
+        background: #FFFFFF;
+        box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+        border-radius: 24px;
+        left: 300px;
+        top: 300px;
+        z-index: 2;
+        // .header__form_text
+
+        &_text {
+            
+        }
+
+        // .header__form_login
+
+        &_login {
+            display: flex;
+            margin-top: 30px;
+            gap:24px;
+        }
+
+        // .header__form_login-enter
+
+        &_login-enter {
+            cursor: pointer;
+            background: #FDB100;
+            border-radius: 16px;
+            padding: 16px 109px 16px 109px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+
+        // .header__form_login-pass
+
+        &_login-pass {
+            cursor: pointer;
+            padding: 16px 71px 16px 71px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            border: 1px solid #FDB100;
+            box-sizing: border-box;
+            border-radius: 16px;
+            color: #FDB100;
+        }
+    }
+
+    // .header__form-headertext
+
+    &__form-headertext {
+        font-style: normal;
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height, or 125% */
+
+
+        color: #25292D;
+    }
+
+    // .header__form-headersubtext
+
+    &__form-headersubtext {
+        margin-top: 30px;
+        font-style: normal;
+        width: 577px;
+        height: 56px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        /* or 156% */
+
+        font-feature-settings: 'case' on;
+
+        color: #4A525A;
+    }
+
+    &__form {
+
+        // .header__form_registr
+
+        &_registr {
+            width: 580px;
+        }
+
+        // .header__form_registr-text
+
+        &_registr-text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            /* identical to box height, or 125% */
+
+            text-transform: capitalize;
+
+            color: #25292D;
+        }
+
+        &_registr-input{
+            margin-top: 47px;
+        }
+
+        // .header__form_registr-input
+
+        &_registr-input-item {
+            width: 580px;
+            height: 50px;
+            font-size: 18px;
+            line-height: 32px;
+            color: #25292D;
+            border: 1px solid rgba(145, 150, 161, 0.4);
+            box-sizing: border-box;
+            border-radius: 16px;
+            margin-top: 20px;
+
+            padding-left: 26px;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+
+            color: rgba(37, 41, 45, 0.5);
+            
+        }
+        &_registr-input-com{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 28px;
+            /* identical to box height, or 233% */
+
+            display: flex;
+            align-items: center;
+
+            color: rgba(37, 41, 45, 0.3);
+        }
+
+    
+        &_registr-pass {
+            display: flex;  
+        }
+
+        // .header__form_registr-pass-input
+
+        &_registr-pass-input {
+            width: 278px;
+            height: 50px;
+            border: 1px solid rgba(145, 150, 161, 0.4);
+            box-sizing: border-box;
+            border-radius: 16px;
+            margin-right: 24px;
+            margin-top: 20px;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            padding-left: 26px;
+            color: rgba(37, 41, 45, 0.5);
+
+        }
+
+        // .header__form_registr-login
+
+        &_registr-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 39px;
+            gap:22px;
+        }
+
+        // .header__form_registr-login-reg
+
+        &_registr-login-reg {
+            cursor: pointer;
+            background: #FDB100;
+            border-radius: 16px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            padding: 16px 39px 16px 39px;
+
+            color: #FFFFFF;
+
+        }
+
+        // .header__form_registr-login-no
+
+        &_registr-login-no {
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+
+            color: #FDB100;
+
+            padding: 16px 100px 16px 100px;
+            border: 1px solid #FDB100;
+            box-sizing: border-box;
+            border-radius: 16px;
+        }
+
+        // .header__form_registr-ihave
+
+        &_registr-ihave {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 47px;
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+
+            color: #FDB100;
+            border-bottom-color: #FDB100;
+            
+            text-decoration: none;
+            &:hover{
+                border-bottom: 1px dashed #FDB100;
+            }
+        }
+    }
+
+    &__form {
+
+        // .header__form_enter
+
+        &_enter {
+            
+
+        }
+
+        // .header__form_enter-text
+
+        &_enter-text {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            /* identical to box height, or 125% */
+
+            text-transform: capitalize;
+
+            color: #25292D;
+        }
+
+        // .header__form_enter-input
+
+        &_enter-input {
+            margin-top: 49px;
+            display: grid;
+            align-items: center;
+            gap:20px;
+        }
+
+        // .header__form_enter-input-item
+
+        &_enter-input-item {
+            border: 1px solid rgba(145, 150, 161, 0.4);
+            box-sizing: border-box;
+            border-radius: 16px;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            padding-left: 26px;
+
+            color: rgba(37, 41, 45, 0.5);
+
+            width: 580px;
+            height: 50px;
+        }
+
+        // .header__form_enter-login
+
+        &_enter-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 46px;  
+            gap: 22px;      
+        }
+
+        // .header__form_enter-login-reg
+
+        &_enter-login-reg {
+            cursor: pointer;
+            background: #FDB100;
+            border-radius: 16px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            padding: 16px 109px 16px 109px;
+
+            color: #FFFFFF;
+        }
+
+        // .header__form_enter-login-no
+
+        &_enter-login-no {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            padding: 16px 100px 16px 100px;
+
+            color: #FDB100;
+            border: 1px solid #FDB100;
+            box-sizing: border-box;
+            border-radius: 16px;
+        }
+
+        // .header__form_enter-ihave
+
+        &_enter-ihave {
+            cursor: pointer;
+            display: flex;
+            margin-top: 40px;
+            text-align: center;
+            justify-content: center;
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+
+            color: #FDB100;
+            border-bottom-color: #FDB100;
+            
+            text-decoration: none;
+            &:hover{
+                border-bottom: 1px dashed #FDB100;
+            }
+        }
+    }
+}
+.button1 {
+    cursor: pointer;
+    z-index: 2;
+
+    color: rgba(145, 150, 161, 0.4);;
+
+    border: none;
+    outline: none
+}
+
+.end{
+    position: absolute;
+    right: 25px;
+    top: 27px;
 }
