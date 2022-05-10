@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background: #FEFEFB;
@@ -19,6 +23,10 @@ footer {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+.active path {
+  fill: red;
 }
 
 .header {
@@ -73,6 +81,9 @@ footer {
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
+.header__main_recept-nav-main-recept:hover {
+  color: #000000;
+}
 .header__main_recept-nav-main-favourites {
   font-style: normal;
   font-weight: 400;
@@ -82,6 +93,9 @@ footer {
   text-decoration: none;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+.header__main_recept-nav-main-favourites:hover {
+  color: #000000;
 }
 .header__login {
   display: -webkit-box;
@@ -132,9 +146,16 @@ footer {
   -webkit-box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
           box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
   border-radius: 24px;
-  left: 300px;
-  top: 300px;
-  z-index: 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 400px;
 }
 .header__form_login {
   display: -webkit-box;
@@ -580,38 +601,45 @@ footer {
 .Center__like_time-like {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 30px;
 }
-.Center__like_time-like_time-like {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-.Center__like_time-like_time-like:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.Center__like_time-like_time-like:active path {
-  fill: #D50000;
-}
 .Center__like_time-like-indent {
+  cursor: pointer;
   position: absolute;
   right: 50px;
   top: 15px;
 }
 .Center__like_time-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
-  left: 40px;
-  top: 15px;
-  color: #000000;
+  left: 10px;
+  top: 14px;
+  width: 170px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+  color: #25292D;
 }
 .Center__img_ROD {
   position: absolute;
-  left: 595px;
+  left: 644px;
   top: 60px;
 }
 .Center__ellips-Emoji {
   position: absolute;
-  left: 600px;
+  left: 650px;
   top: 80px;
   border: 20px solid #FDB100;
   border-radius: 100px;
@@ -619,18 +647,18 @@ footer {
 }
 .Center__ellips-Emoji-eye {
   position: absolute;
-  left: 630px;
+  left: 680px;
   top: 112px;
 }
 .Center__ellips-Emoji-eye2 {
   position: absolute;
-  left: 647px;
+  left: 697px;
   top: 112px;
 }
 .Center__h2 {
   display: table-column;
   margin-top: 150px;
-  margin-left: 20px;
+  margin-left: 73px;
 }
 .Center__h2-text {
   width: 513px;

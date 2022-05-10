@@ -211,23 +211,15 @@
 
         &_time-like {
             justify-content: space-around;
+            align-items: center;
             margin-right: 30px;
-            &_time-like {
-                transition: 0.3s ease;
-              }
-              
-              &_time-like:hover {
-                transform: scale(1.2);
-              }
-              
-              &_time-like:active path {
-                fill: #D50000;
-              }
+            
         }
 
         // .Center__like_time-like-indent
 
         &_time-like-indent {
+            cursor: pointer;
             position: absolute;
             right: 50px;
             top:15px;
@@ -236,10 +228,23 @@
         // .Center__like_time-time
 
         &_time-time {
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            justify-content: center;
             position: absolute;
-            left: 40px;
-            top: 15px;
-            color: #000000;
+            left: 10px;
+            top: 14px;
+            width: 170px;
+            font-style: normal;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            /* identical to box height, or 175% */
+
+
+            color: #25292D;
         }
     }
 
@@ -251,7 +256,7 @@
 
         &_ROD {
             position: absolute;
-            left: 595px;
+            left: 644px;
             top: 60px;
         }
     }
@@ -265,7 +270,7 @@
 
     &__ellips-Emoji {
         position: absolute;
-        left: 600px;
+        left: 650px;
         top: 80px;
         border: 20px solid #FDB100;
         border-radius: 100px;
@@ -277,7 +282,7 @@
 
     &__ellips-Emoji-eye {
         position: absolute;
-        left: 630px;
+        left: 680px;
         top: 112px;
     }
 
@@ -285,7 +290,7 @@
 
     &__ellips-Emoji-eye2 {
         position: absolute;
-        left: 647px;
+        left: 697px;
         top: 112px;
     }
 
@@ -294,7 +299,7 @@
     &__h2 {
         display: table-column;
         margin-top: 150px;
-        margin-left: 20px;
+        margin-left: 73px;
     }
 
     // .Center__h2-text

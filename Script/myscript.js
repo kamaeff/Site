@@ -51,8 +51,7 @@ function valid()
 function openSection(idSection) {
     closeSection();
     document.getElementById(idSection).style.display = "block";
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.overflow = 'hidden';
 }
 function closeSection()
 {
@@ -61,14 +60,19 @@ function closeSection()
     for (i = 0; i < content.length; i++) {
         content[i].style.display = "none";
     }
-    document.body.style.position = '';
-    document.body.style.top = '';
+    document.body.style.overflow = 'visible';
 }
 
 function Click() {
-    updateLike(++counter);
+    updateLike(counter=1);
 }
 
 function updateLike(val) {
     document.getElementById("label").innerHTML = val;
+
 }
+
+var like = document.getElementById("like");
+like.addEventListener("click", function(){
+    this.classList.add("active");
+});
