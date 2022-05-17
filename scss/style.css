@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #FEFEFB;
 }
 
@@ -25,6 +25,17 @@ footer {
           justify-content: left;
 }
 
+.search {
+  height: 73px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+          box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+  border-radius: 16px;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 22 px;
+}
+
 .active path {
   fill: red;
 }
@@ -43,6 +54,7 @@ footer {
   margin-left: 120px;
   position: relative;
 }
+
 .header__main_recept {
   font-style: normal;
   font-weight: 700;
@@ -52,16 +64,19 @@ footer {
   margin-top: 26px;
   color: #FDB100;
 }
+
 .header__main_recept-nav {
   text-decoration: none;
   list-style: none;
   margin-top: 20px;
 }
+
 .header__main_recept-nav li {
   display: inline-block;
   /* Строчно-блочный элемент */
   padding-left: 60px;
 }
+
 .header__main_recept-nav-main-button {
   font-style: normal;
   font-weight: 600;
@@ -69,12 +84,14 @@ footer {
   line-height: 22px;
   color: #3A3C41;
   text-decoration: none;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
+
 .header__main_recept-nav-main-button:hover {
   color: #9196A1;
 }
+
 .header__main_recept-nav-main-recept {
   font-style: normal;
   font-weight: 400;
@@ -82,12 +99,14 @@ footer {
   line-height: 22px;
   color: #9196A1;
   text-decoration: none;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
+
 .header__main_recept-nav-main-recept:hover {
   color: #000000;
 }
+
 .header__main_recept-nav-main-favourites {
   font-style: normal;
   font-weight: 400;
@@ -95,12 +114,14 @@ footer {
   line-height: 22px;
   color: #9196A1;
   text-decoration: none;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
+
 .header__main_recept-nav-main-favourites:hover {
   color: #000000;
 }
+
 .header__login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +131,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .header__login_ellips {
   margin-right: 10px;
   border-radius: 20px;
@@ -117,11 +139,13 @@ footer {
   width: 38px;
   height: 38px;
 }
+
 .header__login_ellips-image-authorization {
   position: absolute;
   height: 16px;
   padding: 11px;
 }
+
 .header__login_ellips-authorization {
   cursor: pointer;
   font-style: normal;
@@ -130,10 +154,11 @@ footer {
   font-size: 18px;
   line-height: 22px;
   text-decoration: none;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
   color: #FDB100;
 }
+
 .header__image_right {
   position: absolute;
   top: 0px;
@@ -142,6 +167,7 @@ footer {
   height: 800px;
   z-index: -1;
 }
+
 .header__form {
   display: none;
   position: absolute;
@@ -161,6 +187,7 @@ footer {
           transform: translate(-50%, -50%);
   top: 400px;
 }
+
 .header__form_login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +195,7 @@ footer {
   margin-top: 30px;
   gap: 24px;
 }
+
 .header__form_login-enter {
   cursor: pointer;
   background: #FDB100;
@@ -180,6 +208,7 @@ footer {
   text-align: center;
   color: #FFFFFF;
 }
+
 .header__form_login-pass {
   cursor: pointer;
   padding: 16px 71px 16px 71px;
@@ -194,6 +223,7 @@ footer {
   border-radius: 16px;
   color: #FDB100;
 }
+
 .header__form-headertext {
   font-style: normal;
   margin-top: 30px;
@@ -203,6 +233,7 @@ footer {
   /* identical to box height, or 125% */
   color: #25292D;
 }
+
 .header__form-headersubtext {
   margin-top: 30px;
   font-style: normal;
@@ -212,13 +243,15 @@ footer {
   font-size: 18px;
   line-height: 28px;
   /* or 156% */
-  -webkit-font-feature-settings: "case" on;
-          font-feature-settings: "case" on;
+  -webkit-font-feature-settings: 'case' on;
+          font-feature-settings: 'case' on;
   color: #4A525A;
 }
+
 .header__form_registr {
   width: 580px;
 }
+
 .header__form_registr-text {
   font-style: normal;
   font-weight: 700;
@@ -228,9 +261,11 @@ footer {
   text-transform: capitalize;
   color: #25292D;
 }
+
 .header__form_registr-input {
   margin-top: 47px;
 }
+
 .header__form_registr-input-item {
   width: 580px;
   height: 50px;
@@ -249,6 +284,7 @@ footer {
   line-height: 28px;
   color: rgba(37, 41, 45, 0.5);
 }
+
 .header__form_registr-input-com {
   font-style: normal;
   font-weight: 400;
@@ -263,12 +299,14 @@ footer {
           align-items: center;
   color: rgba(37, 41, 45, 0.3);
 }
+
 .header__form_registr-pass {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
 }
+
 .header__form_registr-pass-input {
   width: 278px;
   height: 50px;
@@ -284,6 +322,7 @@ footer {
   padding-left: 26px;
   color: rgba(37, 41, 45, 0.5);
 }
+
 .header__form_registr-login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,6 +336,7 @@ footer {
   margin-top: 39px;
   gap: 22px;
 }
+
 .header__form_registr-login-reg {
   cursor: pointer;
   background: #FDB100;
@@ -308,6 +348,7 @@ footer {
   padding: 16px 39px 16px 39px;
   color: #FFFFFF;
 }
+
 .header__form_registr-login-no {
   cursor: pointer;
   font-style: normal;
@@ -322,6 +363,7 @@ footer {
           box-sizing: border-box;
   border-radius: 16px;
 }
+
 .header__form_registr-ihave {
   cursor: pointer;
   display: -webkit-box;
@@ -342,9 +384,11 @@ footer {
   border-bottom-color: #FDB100;
   text-decoration: none;
 }
+
 .header__form_registr-ihave:hover {
   border-bottom: 1px dashed #FDB100;
 }
+
 .header__form_enter-text {
   font-style: normal;
   font-weight: 700;
@@ -354,6 +398,7 @@ footer {
   text-transform: capitalize;
   color: #25292D;
 }
+
 .header__form_enter-input {
   margin-top: 49px;
   display: -ms-grid;
@@ -363,6 +408,7 @@ footer {
           align-items: center;
   gap: 20px;
 }
+
 .header__form_enter-input-item {
   border: 1px solid rgba(145, 150, 161, 0.4);
   -webkit-box-sizing: border-box;
@@ -377,6 +423,7 @@ footer {
   width: 580px;
   height: 50px;
 }
+
 .header__form_enter-login {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +437,7 @@ footer {
   margin-top: 46px;
   gap: 22px;
 }
+
 .header__form_enter-login-reg {
   cursor: pointer;
   background: #FDB100;
@@ -402,6 +450,7 @@ footer {
   padding: 16px 109px 16px 109px;
   color: #FFFFFF;
 }
+
 .header__form_enter-login-no {
   font-style: normal;
   font-weight: 600;
@@ -415,6 +464,7 @@ footer {
           box-sizing: border-box;
   border-radius: 16px;
 }
+
 .header__form_enter-ihave {
   cursor: pointer;
   display: -webkit-box;
@@ -433,6 +483,7 @@ footer {
   border-bottom-color: #FDB100;
   text-decoration: none;
 }
+
 .header__form_enter-ihave:hover {
   border-bottom: 1px dashed #FDB100;
 }
@@ -454,6 +505,7 @@ footer {
 .content {
   margin-left: 120px;
 }
+
 .content__h1-text {
   width: 1000px;
   font-style: normal;
@@ -462,6 +514,7 @@ footer {
   line-height: 88px;
   color: #25292D;
 }
+
 .content__h1-subtext {
   padding-top: 10px;
   font-style: normal;
@@ -471,6 +524,7 @@ footer {
   /* or 156% */
   color: #4A525A;
 }
+
 .content__Enter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,6 +535,7 @@ footer {
   margin-top: 42px;
   gap: 24px;
 }
+
 .content__Enter_second-enter {
   font-style: normal;
   font-weight: 600;
@@ -489,6 +544,7 @@ footer {
   text-decoration: none;
   color: #FDB100;
 }
+
 .content__Enter_second-enter-ellips {
   border: 1px solid #FDB100;
   -webkit-box-sizing: border-box;
@@ -496,6 +552,7 @@ footer {
   border-radius: 16px;
   padding: 16px 78px 16px 78px;
 }
+
 .content__Enter-add-button-ellips {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,6 +561,7 @@ footer {
   border-radius: 16px;
   padding: 16px 35px 16px 35px;
 }
+
 .content__Enter-add-button {
   font-style: normal;
   font-weight: 600;
@@ -512,6 +570,7 @@ footer {
   text-decoration: none;
   color: #FFFFFF;
 }
+
 .content__Enter-plus_img {
   position: relative;
   width: 15px;
@@ -523,6 +582,7 @@ footer {
 .h2 {
   margin-left: 120px;
 }
+
 .h2_header {
   padding-top: 300px;
   font-style: normal;
@@ -531,6 +591,7 @@ footer {
   line-height: 62px;
   color: #25292D;
 }
+
 .h2_header-note {
   font-style: normal;
   font-weight: 400;
@@ -544,6 +605,7 @@ footer {
   margin-left: 91px;
   margin-top: 42px;
 }
+
 .cleversort__border {
   position: relative;
   display: inline-block;
@@ -555,6 +617,7 @@ footer {
   width: 278px;
   height: 271px;
 }
+
 .cleversort__border_png {
   position: relative;
   top: 24px;
@@ -563,6 +626,7 @@ footer {
   background: #FFEFCC;
   border-radius: 12px;
 }
+
 .cleversort__border_text {
   position: absolute;
   bottom: 130px;
@@ -573,6 +637,7 @@ footer {
   line-height: 30px;
   color: #25292D;
 }
+
 .cleversort__border_subtext {
   position: absolute;
   top: 114px;
@@ -594,14 +659,17 @@ footer {
   margin-left: 120px;
   margin-top: 157px;
 }
+
 .Center_img {
   width: 543px;
   height: 543px;
 }
+
 .Center__like_time {
   position: relative;
   left: 500px;
 }
+
 .Center__like_time-like {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -610,12 +678,14 @@ footer {
           align-items: center;
   margin-right: 30px;
 }
+
 .Center__like_time-like-indent {
   cursor: pointer;
   position: absolute;
   right: 50px;
   top: 15px;
 }
+
 .Center__like_time-time {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,11 +706,13 @@ footer {
   /* identical to box height, or 175% */
   color: #25292D;
 }
+
 .Center__img_ROD {
   position: absolute;
   left: 644px;
   top: 60px;
 }
+
 .Center__ellips-Emoji {
   position: absolute;
   left: 650px;
@@ -649,21 +721,25 @@ footer {
   border-radius: 100px;
   background: #FDB100;
 }
+
 .Center__ellips-Emoji-eye {
   position: absolute;
   left: 680px;
   top: 112px;
 }
+
 .Center__ellips-Emoji-eye2 {
   position: absolute;
   left: 697px;
   top: 112px;
 }
+
 .Center__h2 {
   display: table-column;
   margin-top: 150px;
   margin-left: 73px;
 }
+
 .Center__h2-text {
   width: 513px;
   height: 120px;
@@ -674,6 +750,7 @@ footer {
   text-transform: capitalize;
   color: #25292D;
 }
+
 .Center__h2-subtext {
   width: 513px;
   height: 128px;
@@ -682,8 +759,8 @@ footer {
   font-size: 18px;
   line-height: 32px;
   /* or 178% */
-  -webkit-font-feature-settings: "case" on;
-          font-feature-settings: "case" on;
+  -webkit-font-feature-settings: 'case' on;
+          font-feature-settings: 'case' on;
   color: #4A525A;
 }
 
@@ -694,6 +771,7 @@ footer {
   margin-left: 120px;
   margin-top: 150px;
 }
+
 .bottom_text {
   font-style: normal;
   font-weight: 700;
@@ -702,6 +780,7 @@ footer {
   text-align: center;
   color: #25292D;
 }
+
 .bottom_subtext {
   padding-top: 16px;
   font-weight: 300;
@@ -710,6 +789,7 @@ footer {
   text-align: center;
   color: #4A525A;
 }
+
 .bottom__search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -721,6 +801,7 @@ footer {
   margin-left: 278px;
   margin-top: 64px;
 }
+
 .bottom__search-input {
   height: 73px;
   outline: none;
@@ -738,6 +819,7 @@ footer {
   padding-left: 32px;
   color: rgba(37, 41, 45, 0.5);
 }
+
 .bottom__search-button {
   padding: 27px 42px 27px 42px;
   background: #FDB100;
@@ -757,6 +839,7 @@ footer {
   text-decoration: none;
   color: #FFFFFF;
 }
+
 .bottom__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,11 +847,13 @@ footer {
   margin-top: 5px;
   padding-left: 255px;
 }
+
 .bottom__nav li {
   display: inline-block;
   /* Строчно-блочный элемент */
   padding-left: 30px;
 }
+
 .bottom__nav-item {
   text-decoration: none;
   list-style: none;
@@ -785,6 +870,7 @@ footer {
           align-items: center;
   color: #808080;
 }
+
 .bottom__nav-item:hover {
   color: #000000;
 }
@@ -798,6 +884,7 @@ footer {
   /* identical to box height */
   color: #FDB100;
 }
+
 .footer_item-recipes2021 {
   margin-left: auto;
   margin-right: 119px;
@@ -809,3 +896,4 @@ footer {
   line-height: 24px;
   color: #4A525A;
 }
+/*# sourceMappingURL=style.css.map */

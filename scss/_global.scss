@@ -19,9 +19,27 @@ footer{
 
 }
 
-.search{
+.error{
+    height: 73px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+    border-radius: 16px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 22 px;
+}
+
+.valid{
+    border: green;
+}
+
+.unvalid{
+    border: red;
 }
 
 .active path{
     fill: red;
+}
+.unactive path{
+    fill: black;
 }

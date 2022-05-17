@@ -267,7 +267,7 @@
             border: 1px solid rgba(145, 150, 161, 0.4);
             box-sizing: border-box;
             border-radius: 16px;
-            margin-top: 20px;
+            margin-top: 30px;
 
             padding-left: 26px;
 
@@ -294,7 +294,8 @@
 
     
         &_registr-pass {
-            display: flex;  
+            display: flex;
+            padding-top: 30px; 
         }
 
         // .header__form_registr-pass-input
@@ -306,7 +307,6 @@
             box-sizing: border-box;
             border-radius: 16px;
             margin-right: 24px;
-            margin-top: 20px;
 
             font-style: normal;
             font-weight: 400;
