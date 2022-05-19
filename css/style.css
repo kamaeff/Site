@@ -29,10 +29,6 @@ footer {
   fill: red;
 }
 
-.unactive path {
-  fill: black;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +138,12 @@ footer {
   height: 800px;
   z-index: -1;
 }
+@media (max-width: 991.98px) {
+  .header__image_right {
+    width: 450px;
+    height: 600px;
+  }
+}
 .header__form {
   display: none;
   position: absolute;
@@ -230,6 +232,7 @@ footer {
 }
 .header__form_registr-input {
   margin-top: 47px;
+  display: inline-block;
 }
 .header__form_registr-input-item {
   width: 580px;
@@ -299,6 +302,7 @@ footer {
 }
 .header__form_registr-login-reg {
   cursor: pointer;
+  border: 1px solid #FDB100;
   background: #FDB100;
   border-radius: 16px;
   font-style: normal;
@@ -462,14 +466,25 @@ footer {
   line-height: 88px;
   color: #25292D;
 }
+@media (max-width: 1199.98px) {
+  .content__h1-text {
+    font-size: 52px;
+  }
+}
 .content__h1-subtext {
   padding-top: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   color: #4A525A;
+}
+@media (max-width: 991.98px) {
+  .content__h1-subtext {
+    padding-top: 5px;
+    font-size: 15px;
+    width: 800px;
+  }
 }
 .content__Enter {
   display: -webkit-box;
@@ -531,12 +546,16 @@ footer {
   line-height: 62px;
   color: #25292D;
 }
+@media (max-width: 1199.98px) {
+  .h2_header {
+    padding-top: 200px;
+  }
+}
 .h2_header-note {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  /* or 178% */
   color: #4A525A;
 }
 
@@ -554,6 +573,13 @@ footer {
   background: #FFFFFF;
   width: 278px;
   height: 271px;
+}
+@media (max-width: 1199.98px) {
+  .cleversort__border {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 15px;
+  }
 }
 .cleversort__border_png {
   position: relative;
@@ -598,9 +624,31 @@ footer {
   width: 543px;
   height: 543px;
 }
+@media (max-width: 1399.98px) {
+  .Center_img {
+    width: 443px;
+    height: 443px;
+  }
+}
+@media (max-width: 991.98px) {
+  .Center_img {
+    width: 343px;
+    height: 343px;
+  }
+}
 .Center__like_time {
   position: relative;
   left: 500px;
+}
+@media (max-width: 1399.98px) {
+  .Center__like_time {
+    left: 450px;
+  }
+}
+@media (max-width: 991.98px) {
+  .Center__like_time {
+    left: 230px;
+  }
 }
 .Center__like_time-like {
   -ms-flex-pack: distribute;
@@ -633,13 +681,26 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  /* identical to box height, or 175% */
   color: #25292D;
 }
 .Center__img_ROD {
   position: absolute;
   left: 644px;
   top: 60px;
+}
+@media (max-width: 1399.98px) {
+  .Center__img_ROD {
+    left: 528px;
+    top: 60px;
+    width: 82px;
+  }
+}
+@media (max-width: 991.98px) {
+  .Center__img_ROD {
+    left: 370px;
+    top: 40px;
+    width: 82px;
+  }
 }
 .Center__ellips-Emoji {
   position: absolute;
@@ -649,20 +710,70 @@ footer {
   border-radius: 100px;
   background: #FDB100;
 }
+@media (max-width: 1399.98px) {
+  .Center__ellips-Emoji {
+    left: 530px;
+    top: 80px;
+    border: 15px solid #FDB100;
+  }
+}
+@media (max-width: 991.98px) {
+  .Center__ellips-Emoji {
+    left: 372px;
+    top: 60px;
+    border: 15px solid #FDB100;
+  }
+}
 .Center__ellips-Emoji-eye {
   position: absolute;
   left: 680px;
   top: 112px;
+}
+@media (max-width: 1399.98px) {
+  .Center__ellips-Emoji-eye {
+    left: 553px;
+    top: 106px;
+  }
+}
+@media (max-width: 991.98px) {
+  .Center__ellips-Emoji-eye {
+    left: 395px;
+    top: 87px;
+  }
 }
 .Center__ellips-Emoji-eye2 {
   position: absolute;
   left: 697px;
   top: 112px;
 }
+@media (max-width: 1399.98px) {
+  .Center__ellips-Emoji-eye2 {
+    left: 572px;
+    top: 106px;
+  }
+}
+@media (max-width: 991.98px) {
+  .Center__ellips-Emoji-eye2 {
+    left: 414px;
+    top: 87px;
+  }
+}
 .Center__h2 {
   display: table-column;
   margin-top: 150px;
   margin-left: 73px;
+}
+@media (max-width: 1399.98px) {
+  .Center__h2 {
+    margin-top: 160px;
+    margin-left: 55px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .Center__h2 {
+    margin-top: 160px;
+    margin-left: 15px;
+  }
 }
 .Center__h2-text {
   width: 513px;
@@ -674,6 +785,20 @@ footer {
   text-transform: capitalize;
   color: #25292D;
 }
+@media (max-width: 1399.98px) {
+  .Center__h2-text {
+    font-size: 24px;
+    line-height: 40px;
+    height: 80px;
+  }
+}
+@media (max-width: 991.98px) {
+  .Center__h2-text {
+    font-size: 14px;
+    line-height: 10px;
+    height: 40px;
+  }
+}
 .Center__h2-subtext {
   width: 513px;
   height: 128px;
@@ -681,10 +806,24 @@ footer {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  /* or 178% */
   -webkit-font-feature-settings: "case" on;
           font-feature-settings: "case" on;
   color: #4A525A;
+}
+@media (max-width: 1399.98px) {
+  .Center__h2-subtext {
+    font-size: 16px;
+    width: 450px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 991.98px) {
+  .Center__h2-subtext {
+    font-size: 14px;
+    line-height: 22px;
+    height: 40px;
+    width: 313px;
+  }
 }
 
 .bottom {
@@ -721,11 +860,15 @@ footer {
   margin-left: 278px;
   margin-top: 64px;
 }
+@media (max-width: 1399.98px) {
+  .bottom__search {
+    margin-left: 0px;
+  }
+}
 .bottom__search-input {
   height: 73px;
   outline: none;
   border: 0px solid black;
-  border-radius: 5px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
           box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
@@ -737,6 +880,11 @@ footer {
   text-transform: capitalize;
   padding-left: 32px;
   color: rgba(37, 41, 45, 0.5);
+}
+@media (max-width: 1199.98px) {
+  .bottom__search-input {
+    width: 650px;
+  }
 }
 .bottom__search-button {
   padding: 27px 42px 27px 42px;
@@ -763,6 +911,11 @@ footer {
   display: flex;
   margin-top: 5px;
   padding-left: 255px;
+}
+@media (max-width: 1399.98px) {
+  .bottom__nav {
+    padding-left: 0px;
+  }
 }
 .bottom__nav li {
   display: inline-block;
@@ -795,7 +948,6 @@ footer {
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
-  /* identical to box height */
   color: #FDB100;
 }
 .footer_item-recipes2021 {

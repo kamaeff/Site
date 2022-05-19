@@ -12,12 +12,10 @@ function closeSection()
     }
     document.body.style.overflow = 'visible';
 }
-var val = 0;
-var like = document.getElementById("like");
+let val = 0;
+let like = document.getElementById("like");
 like.addEventListener("click", function(){ 
     this.classList.toggle("active");
     document.getElementById("label").innerHTML = val = 1 - val;
 
 });
-
-let inputIn = document.querySelector('.header__form_registr');

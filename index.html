@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewpoint" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
     <title>Recpies</title>
-    <link href="css/Style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,68 +29,10 @@
 				<img src="Image/Vector.png" class="header__login_ellips-image-authorization">
 			</div>
 			<a class="header__login_ellips-authorization" onclick="openSection('form-choice')">Войти</a>
+            <img src="Image/Rectangle 1.png" class="header__image_right">
         </div>
-	<img src="Image/Rectangle 1.png" class="header__image_right">
+	</header>
     
-    <section id="form-choice" class="header__form">
-        <form>
-            <div class="end">
-                <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
-            </div>
-            <div class="header__form_text">
-                <div class="header__form-headertext">Войдите в профиль</div>
-                <div class="header__form-headersubtext">Добавлять рецепты могут только зарегистрированные пользователи.</div>
-            </div>
-            <div class="header__form_login">
-                <a class="header__form_login-enter" onclick="openSection('form-enter')">Войти</a>
-                <a class="header__form_login-pass" onclick="openSection('form-registration')">Регистрация</a>
-            </div>
-        </form>
-    </section>
-
-    <section id="form-registration" class="header__form">
-        <form class="header__form_registr">
-            <div class="end">
-                <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
-            </div>
-            <div class="header__form_registr-text">Регистрация</div>
-            <div class="header__form_registr-input">
-                <input data-rule="name" type="text" size="70" placeholder="Имя" class="search header__form_registr-input-item">   
-                <input data-rule="login" type="text" size="70" placeholder="Логин" class="search header__form_registr-input-item">
-                <div class="header__form_registr-pass">
-                    <input data-rule="pass" type="password" size="70" placeholder="Пароль" class="header__form_registr-pass-input">
-                    <input data-rule="repass" type="password" size="70" placeholder="Повторите пароль" class="header__form_registr-pass-input">
-                </div>
-                <p class="header__form_registr-input-com">Минимум 8 символов</p>
-            </div>
-            <div class="header__form_registr-login">
-                <a class="header__form_registr-login-reg"  onclick="valid()">Зарегистрироваться</a>
-                <a class="header__form_registr-login-no" onclick="openSection('form-choice')">Отмена</a>
-            </div>
-            <a class="header__form_registr-ihave" onclick="openSection('form-enter')">У меня уже есть аккаунт</a>
-
-        </form>
-    </section>
-    
-    <section id="form-enter" class="header__form">
-        <form class="header__form_enter">
-            <div class="end">
-                <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
-            </div>
-            <div class="header__form_enter-text">Войти</div>
-            <div class="header__form_enter-input">
-                <input type="text" size="70" placeholder="Логин" class="header__form_enter-input-item">   
-                <input type="password" size="70" placeholder="Пароль" class="header__form_enter-input-item">
-            </div>
-            <div class="header__form_enter-login">
-                <a class="header__form_enter-login-reg">Войти</a>
-                <a class="header__form_enter-login-no" onclick="openSection('form-choice')">Отмена</a>
-            </div>
-            <a class="header__form_enter-ihave" onclick="openSection('form-registration')">У меня еще нет есть аккаунта</a>
-        </form>
-    </section>
-</header>
-
 <main>
     <!-- Контент -->
     <section class="content">
@@ -204,6 +146,69 @@
     <div class="footer_item-recept">Recipes</div>
     <div class="footer_item-recipes2021">© Recipes 2021</div>
 </footer>
+
+<!--Forms-->
+
+<section id="form-choice" class="header__form">
+    <form>
+        <div class="end">
+            <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
+        </div>
+        <div class="header__form_text">
+            <div class="header__form-headertext">Войдите в профиль</div>
+            <div class="header__form-headersubtext">Добавлять рецепты могут только зарегистрированные пользователи.</div>
+        </div>
+        <div class="header__form_login">
+            <a class="header__form_login-enter" onclick="openSection('form-enter')">Войти</a>
+            <a class="header__form_login-pass" onclick="openSection('form-registration')">Регистрация</a>
+        </div>
+    </form>
+</section>
+
+<section id="form-registration" class="header__form">
+    <form class="header__form_registr" id="registr">
+        <div class="end">
+            <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
+        </div>
+        <div class="header__form_registr-text">Регистрация</div>
+        <div class="header__form_registr-input" id="text">
+            <input data-rule="name" type="text" size="70" placeholder="Имя" class="header__form_registr-input-item">   
+            <input data-rule="login" type="text" size="70" placeholder="Логин" class="header__form_registr-input-item">
+            <div class="header__form_registr-pass">
+                <input data-rule="pass" type="password" size="70" placeholder="Пароль" class="header__form_registr-pass-input">
+                <input data-rule="repass" type="password" size="70" placeholder="Повторите пароль" class="header__form_registr-pass-input">
+            </div>
+            <p class="header__form_registr-input-com">Минимум 8 символов</p>
+        </div>
+        <div class="header__form_registr-login">
+            <a type="submit" class="header__form_registr-login-reg" id="button" onclick="valid()">Зарегистрироваться</a>
+            <a class="header__form_registr-login-no" onclick="openSection('form-choice')">Отмена</a>
+        </div>
+        <a class="header__form_registr-ihave" onclick="openSection('form-enter')">У меня уже есть аккаунт</a>
+
+    </form>
+</section>
+
+<section id="form-enter" class="header__form">
+    <form class="header__form_enter">
+        <div class="end">
+            <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
+        </div>
+        <div class="header__form_enter-text">Войти</div>
+        <div class="header__form_enter-input">
+            <input type="text" size="70" placeholder="Логин" class="header__form_enter-input-item">   
+            <input type="password" size="70" placeholder="Пароль" class="header__form_enter-input-item">
+        </div>
+        <div class="header__form_enter-login">
+            <a class="header__form_enter-login-reg">Войти</a>
+            <a class="header__form_enter-login-no" onclick="openSection('form-choice')">Отмена</a>
+        </div>
+        <a class="header__form_enter-ihave" onclick="openSection('form-registration')">У меня еще нет есть аккаунта</a>
+    </form>
+</section>
+
+
+
 
 </body>
 <script src="Script/myscript.js"></script>

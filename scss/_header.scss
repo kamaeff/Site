@@ -127,7 +127,7 @@
     // .header__image
 
     &__image {
-
+        
         // .header__image_right
 
         &_right {
@@ -137,6 +137,10 @@
             width: 602px;
             height: 800px;
             z-index: -1;
+            @media (max-width: $breakpoint992){
+                width: 450px;
+                height: 600px;
+            }
         }
     }
 
@@ -254,6 +258,7 @@
 
         &_registr-input{
             margin-top: 47px;
+            display: inline-block;
         }
 
         // .header__form_registr-input
@@ -331,6 +336,7 @@
 
         &_registr-login-reg {
             cursor: pointer;
+            border: 1px solid #FDB100;
             background: #FDB100;
             border-radius: 16px;
             font-style: normal;

@@ -1,3 +1,12 @@
+@use 'sass:math';
+$breakpoint1400: 1399.98 + px;
+$breakpoint1200: 1199.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint488: 487.98 + px;
+
+$bgColor: #4A525A;
+
 html{
     scroll-behavior: smooth;
 }
@@ -19,27 +28,6 @@ footer{
 
 }
 
-.error{
-    height: 73px;
-    background: #FFFFFF;
-    box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
-    border-radius: 16px;
-    margin-right: 10px;
-    font-size: 12px;
-    line-height: 22 px;
-}
-
-.valid{
-    border: green;
-}
-
-.unvalid{
-    border: red;
-}
-
 .active path{
-    fill: red;
-}
-.unactive path{
-    fill: black;
-}
+    fill:red;
+} 
