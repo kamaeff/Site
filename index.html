@@ -28,7 +28,7 @@
 			<div class="header__login_ellips">
 				<img src="Image/Vector.png" class="header__login_ellips-image-authorization">
 			</div>
-			<a class="header__login_ellips-authorization" onclick="openSection('form-choice')">Войти</a>
+			<a class="header__login_ellips-authorization" onclick="openSection('main-form')">Войти</a>
             <img src="Image/Rectangle 1.png" class="header__image_right">
         </div>
 	</header>
@@ -149,65 +149,63 @@
 
 <!--Forms-->
 
-<section id="form-choice" class="header__form">
-    <form>
+<section id="main-form" class="mainform">
+    <form action="" class="form__startform">
         <div class="end">
             <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
         </div>
-        <div class="header__form_text">
-            <div class="header__form-headertext">Войдите в профиль</div>
-            <div class="header__form-headersubtext">Добавлять рецепты могут только зарегистрированные пользователи.</div>
-        </div>
-        <div class="header__form_login">
-            <a class="header__form_login-enter" onclick="openSection('form-enter')">Войти</a>
-            <a class="header__form_login-pass" onclick="openSection('form-registration')">Регистрация</a>
+        <div class="form__startform_text">Войдите в профиль</div>
+        <div class="form__startform_subtext">Добавлять рецепты могут только зарегистрированные пользователи.</div>
+        <div class="form__startform_container">
+            <a class="form__startform_container-enter" onclick="openSection('login-form')">Войти</a>
+            <a class="form__startform_container-registr" onclick="openSection('reg-form')">Регистрация</a>
         </div>
     </form>
 </section>
 
-<section id="form-registration" class="header__form">
-    <form class="header__form_registr" id="registr">
+
+<section id="reg-form" class="mainform">
+    <form action="" class="js-form" novalidate>
         <div class="end">
             <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
         </div>
-        <div class="header__form_registr-text">Регистрация</div>
-        <div class="header__form_registr-input" id="text">
-            <input data-rule="name" type="text" size="70" placeholder="Имя" class="header__form_registr-input-item">   
-            <input data-rule="login" type="text" size="70" placeholder="Логин" class="header__form_registr-input-item">
-            <div class="header__form_registr-pass">
-                <input data-rule="pass" type="password" size="70" placeholder="Пароль" class="header__form_registr-pass-input">
-                <input data-rule="repass" type="password" size="70" placeholder="Повторите пароль" class="header__form_registr-pass-input">
-            </div>
-            <p class="header__form_registr-input-com">Минимум 8 символов</p>
+        <div class="mainform__title">Регистрация</div>
+        <div class="mainform__form-group">
+            <input type="text" class="mainform__form-group_input mainform__form-group_js-input-login js-input" name ="Имя" placeholder="Имя">
         </div>
-        <div class="header__form_registr-login">
-            <a type="submit" class="header__form_registr-login-reg" id="button" onclick="valid()">Зарегистрироваться</a>
-            <a class="header__form_registr-login-no" onclick="openSection('form-choice')">Отмена</a>
+        <div class="mainform__form-group">
+            <input type="login" class="mainform__form-group_input js-input mainform__form-group_js-input-login" name ="Логин" placeholder="Логин">
         </div>
-        <a class="header__form_registr-ihave" onclick="openSection('form-enter')">У меня уже есть аккаунт</a>
-
+        <div class="mainform__pass">
+            <input type="password" class="mainform__pass_input js-input mainform__pass_js-input-password" name ="Пароль" placeholder="Пароль">
+            <input type="password" class="mainform__pass_input js-input mainform__pass_js-input-repassword" name ="Пароль" placeholder="Повторите пароль">
+        </div>
+        <div class="mainform__symbols">Минимум 8 символов</div>
+        <div class="btn">
+            <button class="btn_reg" type="submit">Заргистрироваться</button>
+            <a class="btn_cancel" type="submit" onclick="closeSection()">Отмена</a>
+        </div>
+        <a class="mainform__ihv" onclick="openSection('login-form')">У меня уже есть аккаунт</a>
     </form>
 </section>
 
-<section id="form-enter" class="header__form">
-    <form class="header__form_enter">
+<section id="login-form" class="loginform">
+    <form action="" class="js-form" novalidate>
         <div class="end">
             <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
         </div>
-        <div class="header__form_enter-text">Войти</div>
-        <div class="header__form_enter-input">
-            <input type="text" size="70" placeholder="Логин" class="header__form_enter-input-item">   
-            <input type="password" size="70" placeholder="Пароль" class="header__form_enter-input-item">
+        <div class="loginform__text">Войти</div>
+        <div class="loginform__container">
+            <input type="login" class="loginform__container_input js-input" name ="Логин" placeholder="Логин">
+            <input type="password" class="loginform__container_input js-input" name ="Пароль" placeholder="Пароль">
         </div>
-        <div class="header__form_enter-login">
-            <a class="header__form_enter-login-reg">Войти</a>
-            <a class="header__form_enter-login-no" onclick="openSection('form-choice')">Отмена</a>
+        <div class="btn">
+            <button class="btn_enter" type="submit"">Войти</button>
+            <a class="btn_cancel" type="submit" onclick="closeSection()">Отмена</a>
         </div>
-        <a class="header__form_enter-ihave" onclick="openSection('form-registration')">У меня еще нет есть аккаунта</a>
+        <a class="loginform__ihv" onclick="openSection('reg-form')">У меня еще нет аккаунт</a>
     </form>
 </section>
-
-
 
 
 </body>
