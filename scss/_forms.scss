@@ -292,6 +292,13 @@
         margin-top: 49px;
         display: grid;
         gap: 20px;
+
+        &_msg {
+            color: red;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+        }
         // .loginform__container_input
 
         &_input {
@@ -306,6 +313,9 @@
             color: rgba(37, 41, 45, 0.5);
             &.error{
                 border: 1px solid red;
+            }
+            &.pos{
+                border: 1px solid green;
             }
         }
     }
@@ -366,5 +376,4 @@
         }
     }
 }
-
 

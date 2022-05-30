@@ -1194,6 +1194,12 @@ footer {
   display: grid;
   gap: 20px;
 }
+.loginform__container_msg {
+  color: red;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
 .loginform__container_input {
   border: 1px solid rgba(145, 150, 161, 0.4);
   border-radius: 16px;
@@ -1206,6 +1212,9 @@ footer {
 }
 .loginform__container_input.error {
   border: 1px solid red;
+}
+.loginform__container_input.pos {
+  border: 1px solid green;
 }
 .loginform__ihv {
   cursor: pointer;
