@@ -35,7 +35,13 @@
             border-radius: 16px;
             
             &.error {
-                border: 2px solid red;
+                border: 1px solid red;
+            }
+            &.pos {
+                border: 1px solid green;
+            }
+            &:hover{
+                border: 1px solid #FDB100;
             }
         }
         
@@ -54,7 +60,6 @@
     }
 }
 .form {
-    
     // .form__startform
 
     &__startform {
@@ -165,17 +170,6 @@
         }
     }
 
-    &__symbols {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 28px;
-        display: flex;
-        align-items: center;
-
-        color: rgba(37, 41, 45, 0.3);
-    }
-
     // .mainform__pass
 
     &__pass {
@@ -194,8 +188,15 @@
             border-radius: 16px;
             padding:11px 45px 11px 28px;
             &.error {
-                border: 2px solid red;
+                border: 1px solid red;
             }
+            &.pos {
+                border: 1px solid green;
+            }
+            &:hover{
+                border: 1px solid #FDB100;
+            }
+            
         }
         
 
@@ -304,7 +305,7 @@
 
             color: rgba(37, 41, 45, 0.5);
             &.error{
-                border: 2px solid red;
+                border: 1px solid red;
             }
         }
     }
@@ -325,6 +326,43 @@
         color: #FDB100;
         &:hover{
             border-bottom: 2px dotted #f9dd94;
+        }
+    }
+}
+
+.main {
+
+    // .main__form
+
+    &__form {
+
+        // .main__form_errors
+
+        &_errors {
+            display: flex;
+        }
+
+        // .main__form_errors-msg
+
+        &_errors-msg {
+            color: red;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 28px;
+            padding-left: 160px;
+        }
+
+        // .main__form_errors-symbols
+
+        &_errors-symbols {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 28px;
+            align-items: center;
+
+            color: rgba(37, 41, 45, 0.3);
         }
     }
 }

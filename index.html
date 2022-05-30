@@ -2,7 +2,6 @@
 <html lang="ru">
     
 <head>
-	<link href="normalaze/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="Image/icon.ico" type="image/-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +42,7 @@
 
         <div class = "content__Enter">
             <a href="#" class="content__Enter-add-button-ellips content__Enter-add-button"><img src="Image/Vector_2.png" class="content__Enter-plus_img">Добавить рецепт</a>
-            <a href="#" class="content__Enter_second-enter content__Enter_second-enter-ellips">Войти</a>
+            <a href="#" class="content__Enter_second-enter content__Enter_second-enter-ellips" onclick="openSection('main-form')">Войти</a>
         </div>
         
     </section>
@@ -165,22 +164,27 @@
 
 
 <section id="reg-form" class="mainform">
-    <form action="" class="js-form" novalidate>
+    <form action="" class="js-form" method="post">
         <div class="end">
             <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
         </div>
         <div class="mainform__title">Регистрация</div>
         <div class="mainform__form-group">
-            <input type="text" class="mainform__form-group_input mainform__form-group_js-input-login js-input" name ="Имя" placeholder="Имя">
+            <input type="text" class="mainform__form-group_input mainform__form-group_js-input-login js-input" name ="Имя" placeholder="Имя" id="name">
+
         </div>
         <div class="mainform__form-group">
-            <input type="login" class="mainform__form-group_input js-input mainform__form-group_js-input-login" name ="Логин" placeholder="Логин">
+            <input type="login" class="mainform__form-group_input js-input mainform__form-group_js-input-login" name ="Логин" placeholder="Логин" id="login">
+
         </div>
         <div class="mainform__pass">
-            <input type="password" class="mainform__pass_input js-input mainform__pass_js-input-password" name ="Пароль" placeholder="Пароль">
-            <input type="password" class="mainform__pass_input js-input mainform__pass_js-input-repassword" name ="Пароль" placeholder="Повторите пароль">
+            <input type="password" class="mainform__pass_input js-input mainform__pass_js-input-password" name ="Пароль" placeholder="Пароль" id="password">
+            <input type="password" class="mainform__pass_input js-input mainform__pass_js-input-repassword" name ="Повторите пароль" placeholder="Повторите пароль" id="repassword">
         </div>
-        <div class="mainform__symbols">Минимум 8 символов</div>
+        <div class="main__form_errors">
+            <div class=" main__form_errors-symbols">Минимум 8 символов</div>
+            <span id='message' class="main__form_errors-msg"></span>
+        </div>
         <div class="btn">
             <button class="btn_reg" type="submit">Заргистрироваться</button>
             <a class="btn_cancel" type="submit" onclick="closeSection()">Отмена</a>
@@ -189,8 +193,8 @@
     </form>
 </section>
 
-<section id="login-form" class="loginform">
-    <form action="" class="js-form" novalidate>
+<section id="login-form" class="mainform">
+    <form action="" class="js-form" method="post">
         <div class="end">
             <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
         </div>
@@ -200,7 +204,7 @@
             <input type="password" class="loginform__container_input js-input" name ="Пароль" placeholder="Пароль">
         </div>
         <div class="btn">
-            <button class="btn_enter" type="submit"">Войти</button>
+            <button class="btn_enter" type="submit">Войти</button>
             <a class="btn_cancel" type="submit" onclick="closeSection()">Отмена</a>
         </div>
         <a class="loginform__ihv" onclick="openSection('reg-form')">У меня еще нет аккаунт</a>

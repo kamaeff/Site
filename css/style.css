@@ -631,7 +631,7 @@ footer {
 }
 @media (max-width: 991.98px) {
   .Center__like_time {
-    left: 230px;
+    left: 210px;
   }
 }
 .Center__like_time-like {
@@ -979,7 +979,13 @@ footer {
   border-radius: 16px;
 }
 .mainform__form-group_input.error {
-  border: 2px solid red;
+  border: 1px solid red;
+}
+.mainform__form-group_input.pos {
+  border: 1px solid green;
+}
+.mainform__form-group_input:hover {
+  border: 1px solid #FDB100;
 }
 .mainform__form-group_js-input-login {
   padding-left: 26px;
@@ -1080,19 +1086,6 @@ footer {
 .mainform__ihv:hover {
   border-bottom: 2px dotted #f9dd94;
 }
-.mainform__symbols {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 28px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: rgba(37, 41, 45, 0.3);
-}
 .mainform__pass {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,7 +1104,13 @@ footer {
   padding: 11px 45px 11px 28px;
 }
 .mainform__pass_input.error {
-  border: 2px solid red;
+  border: 1px solid red;
+}
+.mainform__pass_input.pos {
+  border: 1px solid green;
+}
+.mainform__pass_input:hover {
+  border: 1px solid #FDB100;
 }
 
 .btn {
@@ -1206,7 +1205,7 @@ footer {
   color: rgba(37, 41, 45, 0.5);
 }
 .loginform__container_input.error {
-  border: 2px solid red;
+  border: 1px solid red;
 }
 .loginform__ihv {
   cursor: pointer;
@@ -1226,4 +1225,28 @@ footer {
 }
 .loginform__ihv:hover {
   border-bottom: 2px dotted #f9dd94;
+}
+
+.main__form_errors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main__form_errors-msg {
+  color: red;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  padding-left: 160px;
+}
+.main__form_errors-symbols {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(37, 41, 45, 0.3);
 }
