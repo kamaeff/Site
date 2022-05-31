@@ -21,4 +21,4 @@ function validate($data){
         }
     }
     return $errors;
-}
+} 

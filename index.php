@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__ .'/inc/data.php';
     require_once __DIR__ .'/inc/functions.php';
+    require_once __DIR__ .'/inc/connection.php';    
 
     if (!empty($_POST)){
         debug($_POST);
@@ -180,8 +181,10 @@
     </form>
 </section>
 
+
+
 <section id="reg-form" class="mainform">
-    <form action="" class="js-form" method="post">
+    <form action="" class="js-form" method="get">
         <div class="end">
             <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
         </div>
@@ -203,7 +206,7 @@
             <span id='message' class="main__form_errors-msg"></span>
         </div>
         <div class="btn">
-            <button class="btn_reg" type="submit">Заргистрироваться</button>
+            <button class="btn_reg" type="submit" name="formSubmit">Заргистрироваться</button>
             <a class="btn_cancel" type="submit" onclick="closeSection()">Отмена</a>
         </div>
         <a class="mainform__ihv" onclick="openSection('login-form')">У меня уже есть аккаунт</a>
@@ -222,7 +225,7 @@
             <span id='messageL' class="loginform__container_msg"></span>
         </div>
         <div class="btn">
-            <button class="btn_enter" type="submit">Войти</button>
+            <button class="btn_enter" type="submit" name="formLogin">Войти</button>
             <a class="btn_cancel" type="submit" onclick="closeSection()">Отмена</a>
         </div>
         <a class="loginform__ihv" onclick="openSection('reg-form')">У меня еще нет аккаунт</a>
