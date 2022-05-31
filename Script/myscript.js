@@ -121,35 +121,6 @@ formL.onsubmit = function(){
             return false; 
         }  
     });
-    if (loginL.value == buff.login_kamaeff){
-        loginL.classList.remove('error');
-        loginL.classList.add('pos');
-        console.log('login yes');
-        if (passwordL.value == buff.password_kamaeff){
-            passwordL.classList.remove('error');
-            passwordL.classList.add('pos');
-            console.log('yes');
-            formL.submit();
-            document.getElementById('messageL').innerHTML = '';
-        }
-        else{
-            loginL.classList.remove('pos');
-            loginL.classList.add('error');
-            passwordL.classList.remove('pos');
-            passwordL.classList.add('error');
-            console.log('no');
-            document.getElementById('messageL').innerHTML = 'Не верно введен логин или пароль!';
-            return false;
-        }
-    }
-    else{
-        loginL.classList.remove('pos');
-        loginL.classList.add('error');
-        passwordL.classList.remove('pos');
-        passwordL.classList.add('error');
-        console.log('no');
-        document.getElementById('messageL').innerHTML = 'Не верно введен логин или пароль!';
-        return false;
-    }
-    return false;
+    
+    return true;
 }
