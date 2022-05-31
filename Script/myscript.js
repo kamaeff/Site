@@ -48,7 +48,7 @@ function deletepos(){
 
 form.onsubmit = function(){
     formInputs.forEach(function (input) {   
-        if (input.value === '') {   
+        if (input.value === '' && login.value === '') {   
             input.classList.add('error');  
             input.classList.remove('pos'); 
             console.log('inputs none');
@@ -68,7 +68,12 @@ form.onsubmit = function(){
         }  
     });
 
-    let loginr = login.value; 
+    if (login.value === ''){
+        deletepos();
+        document.getElementById('message').innerHTML = 'Введите логин!';
+        return false;
+    }
+
     if (login.value == buff.login_kamaeff){
         deletepos();
         console.log('Same person');
@@ -101,7 +106,6 @@ form.onsubmit = function(){
         return false;
     } 
 }
-
 
 let formL = document.querySelector('.js-form-login'),
     formLogin = document.querySelectorAll('.js-input-login');

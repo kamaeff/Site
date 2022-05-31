@@ -1,0 +1,224 @@
+<?php
+    require_once __DIR__ .'/inc/connection.php';    
+
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <link rel="shortcut icon" href="Image/icon.ico" type="image/-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <title>Recpies</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+    <p class="header__main_recept">Recipes</p>		
+        <nav>
+            <ul class="header__main_recept-nav">
+                <li><a href="#" class="header__main_recept-nav-main-button">Главная</a></li>
+                <li><a href="index.html#rec" class="header__main_recept-nav-main-recept">Рецепты</a></li>
+                <li><a href="#" class="header__main_recept-nav-main-favourites">Избранное</a></li>
+            </ul>
+        </nav>
+	<!-- кнопка войти -->
+        <div class="header__login">
+			<div class="header__login_ellips">
+				<img src="Image/Vector.png" class="header__login_ellips-image-authorization">
+			</div>
+			<a class="header__login_ellips-authorization" onclick="openSection('main-form')">Войти</a>
+            <img src="Image/Rectangle 1.png" class="header__image_right">
+        </div>
+	</header>
+    
+<main>
+    <!-- Контент -->
+    <section class="content">
+        <div>
+            <h1 class="content__h1-text">Готовь и делись своими рецептами</h1>
+            <p class="content__h1-subtext">Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.</p>
+        </div>
+
+        <div class = "content__Enter">
+            <a href="#" class="content__Enter-add-button-ellips content__Enter-add-button"><img src="Image/Vector_2.png" class="content__Enter-plus_img">Добавить рецепт</a>
+            <a href="#" class="content__Enter_second-enter content__Enter_second-enter-ellips" onclick="openSection('main-form')">Войти</a>
+        </div>
+        
+    </section>
+
+    <!-- Умная сортировка по тегам -->
+    <div class="h2" id="rec">
+        <h2 class="h2_header">Умная сортировка по тегам</h2>
+        <p class="h2_header-note">Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории</p>
+    </div>
+
+    <section class = "cleversort">
+        <div class = "cleversort__border">
+            <img src="Image/ic-menu.png" class="cleversort__border_png">
+            <p class="cleversort__border_text">Простые блюда</p>
+            <p class="cleversort__border_subtext">Время приготвления таких блюд не более 1 часа</p>
+        </div>
+
+        <div class = "cleversort__border">
+            <img src="Image/Vector3.png" class="cleversort__border_png">
+            <p class="cleversort__border_text">Детское</p>
+            <p class="cleversort__border_subtext">Самые полезные блюда которые можно детям любого возраста</p>
+        </div>
+
+        <div class = "cleversort__border">
+            <img src="Image/Vector 4.png" class="cleversort__border_png">
+            <p class="cleversort__border_text">От шеф-повара</p>
+            <p class="cleversort__border_subtext">Требуют умения, времени и терпения, зато как в ресторане</p>
+        </div>
+
+        <div class = "cleversort__border">
+            <img src="Image/Vector5.png" class="cleversort__border_png">
+            <p class="cleversort__border_text">На праздник</p>
+            <p class="cleversort__border_subtext">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
+        </div>
+    </section>
+
+
+    <!-- Центарльная часть -->
+    <section class = "Center">
+        <img src="Image/Rectangle 8.png" class = "Center_img">
+        
+        <div class="Center__like_time ">
+            <a class="Center__like_time-like" id="like">
+                <!--<img src="/Image/Like.svg" class="Center__like_time-like-indent" id="like">-->  
+                <svg class="Center__like_time-like-indent"  width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5 0C12.76 0 11.09 0.81 10 2.09C8.91 0.81 7.24 0 5.5 0C2.42 0 0 2.42 0 5.5C0 9.28 3.4 12.36 8.55 17.04L10 18.35L11.45 17.03C16.6 12.36 20 9.28 20 5.5C20 2.42 17.58 0 14.5 0ZM10.1 15.55L10 15.65L9.9 15.55C5.14 11.24 2 8.39 2 5.5C2 3.5 3.5 2 5.5 2C7.04 2 8.54 2.99 9.07 4.36H10.94C11.46 2.99 12.96 2 14.5 2C16.5 2 18 3.5 18 5.5C18 8.39 14.86 11.24 10.1 15.55Z" fill="black"/>
+                    </svg>              
+                <p id="label">0</p>
+            </a>
+            <div class="Center__like_time-time">
+                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5" d="M12 0H6V2H12V0ZM8 13H10V7H8V13ZM16.03 6.39L17.45 4.97C17.02 4.46 16.55 3.98 16.04 3.56L14.62 4.98C13.07 3.74 11.12 3 9 3C4.03 3 0 7.03 0 12C0 16.97 4.02 21 9 21C13.98 21 18 16.97 18 12C18 9.88 17.26 7.93 16.03 6.39ZM9 19C5.13 19 2 15.87 2 12C2 8.13 5.13 5 9 5C12.87 5 16 8.13 16 12C16 15.87 12.87 19 9 19Z" fill="black"/>
+                </svg>
+                35 минут   
+            </div>
+        </div>
+      
+        <div>
+            <img src="Image/Recept_of_the_day.png" class = "Center__img_ROD">
+        </div>
+
+        <div class="Center__ellips">         
+            <img src="Image/Emoji.png" class="Center__ellips-Emoji">
+            <img src="Image/Emoji-eye.png" class="Center__ellips-Emoji-eye">
+            <img src="Image/Emoji-eye.png" class="Center__ellips-Emoji-eye2">
+        </div>
+
+        <div class="Center__h2">
+            <h2 class="Center__h2-text">Тыквенный супчик На кокосовом молоке</h2>
+            <p class="Center__h2-subtext">Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий суп-пюре на кокосовом молоке. Можно даже в Пост!</p>
+        </div>
+      
+    </section>
+
+    <!-- Нжняя часть -->
+    <section class="bottom">
+
+        <div class="bottom_text">Поиск рецептов</div>
+        <div class="bottom_subtext">Введите примерное название блюда, а мы по тегам найдем его</div>
+        <div class="bottom__search">
+            <input type="text" size="100" placeholder="Название Блюда" class="bottom__search-input">
+            <a href="#" class="bottom__search-button">Поиск</a>
+        </div>
+        
+        <nav>
+            <ul class="bottom__nav">
+                <li><a href="#" class="bottom__nav-item">Мясо</a></li>
+                <li><a href="#" class="bottom__nav-item">Деликатесы</a></li>
+                <li><a href="#" class="bottom__nav-item">Пироги</a></li>
+                <li><a href="#" class="bottom__nav-item">Рыба</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+</main>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="footer_item-recept">Recipes</div>
+    <div class="footer_item-recipes2021">© Recipes 2021</div>
+</footer>
+
+<!--Forms-->
+
+<section id="main-form" class="mainform">
+    <form action="" class="form__startform">
+        <div class="end">
+            <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
+        </div>
+        <div class="form__startform_text">Войдите в профиль</div>
+        <div class="form__startform_subtext">Добавлять рецепты могут только зарегистрированные пользователи.</div>
+        <div class="form__startform_container">
+            <a class="form__startform_container-enter" onclick="openSection('login-form')">Войти</a>
+            <a class="form__startform_container-registr" onclick="openSection('reg-form')">Регистрация</a>
+        </div>
+    </form>
+</section>
+
+
+
+<section id="reg-form" class="mainform">
+    <form action="" class="js-form" method="POST">
+        <div class="end">
+            <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
+        </div>
+        <div class="mainform__title">Регистрация</div>
+        <div class="mainform__form-group">
+            <input type="text" class="mainform__form-group_input mainform__form-group_js-input-login js-input" name ="name" placeholder="Имя" id="name">
+
+        </div>
+        <div class="mainform__form-group">
+            <input type="login" class="mainform__form-group_input js-input mainform__form-group_js-input-login" name ="login" placeholder="Логин" id="login">
+
+        </div>
+        <div class="mainform__pass">
+            <input type="password" class="mainform__pass_input js-input mainform__pass_js-input-password" name ="password" placeholder="Пароль" id="password">
+            <input type="password" class="mainform__pass_input js-input mainform__pass_js-input-repassword" name ="repssword" placeholder="Повторите пароль" id="repassword">
+        </div>
+        <div class="main__form_errors">
+            <div class=" main__form_errors-symbols">Минимум 8 символов</div>
+            <span id='message' class="main__form_errors-msg"></span>
+        </div>
+        <div class="btn">
+            <button class="btn_reg" type="submit" name="formSubmit">Заргистрироваться</button>
+            <a class="btn_cancel" type="submit" onclick="closeSection()">Отмена</a>
+        </div>
+        <a class="mainform__ihv" onclick="openSection('login-form')">У меня уже есть аккаунт</a>
+    </form>
+</section>
+
+<section id="login-form" class="mainform">  
+    <form  class="js-form-login" method="post">
+        <div class="end">
+            <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
+        </div>
+        <div class="loginform__text">Войти</div>
+        <div class="loginform__container">
+            <input type="login" class="loginform__container_input js-input-login" placeholder="Логин" id ="login-enter">
+            <input type="password" class="loginform__container_input js-input-login"  placeholder="Пароль" id="password-enter">
+            <span id='messageL' class="loginform__container_msg"></span>
+        </div>
+        <div class="btn">
+            <button class="btn_enter" type="submit" name="formLogin">Войти</button>
+            <a class="btn_cancel" type="submit" onclick="closeSection()">Отмена</a>
+        </div>
+        <a class="loginform__ihv" onclick="openSection('reg-form')">У меня еще нет аккаунт</a>
+    </form>
+</section>
+
+
+</body>
+<script src="Script/myscript.js"></script>
+</html>
