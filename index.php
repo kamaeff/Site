@@ -1,20 +1,6 @@
 <?php
-    require_once __DIR__ .'/inc/data.php';
-    require_once __DIR__ .'/inc/functions.php';
     require_once __DIR__ .'/inc/connection.php';    
 
-    if (!empty($_POST)){
-        debug($_POST);
-
-        $fields = load($fields);
-        debug($fields);
-
-        if($errors = validate($fields)){
-            debug($errors);
-        }else{
-            echo 'OK';
-        }
-    }
 ?>
 
 <!DOCTYPE html>
@@ -184,7 +170,7 @@
 
 
 <section id="reg-form" class="mainform">
-    <form action="" class="js-form" method="get">
+    <form action="" class="js-form" method="POST">
         <div class="end">
             <a class="button1 bt--form" onclick="closeSection()"><img src="/Image/close.svg" alt="close"></a>
         </div>
@@ -220,8 +206,8 @@
         </div>
         <div class="loginform__text">Войти</div>
         <div class="loginform__container">
-            <input type="login" class="loginform__container_input js-input-login" name ="login" placeholder="Логин" id ="login-enter">
-            <input type="password" class="loginform__container_input js-input-login" name ="password" placeholder="Пароль" id="password-enter">
+            <input type="login" class="loginform__container_input js-input-login" placeholder="Логин" id ="login-enter">
+            <input type="password" class="loginform__container_input js-input-login"  placeholder="Пароль" id="password-enter">
             <span id='messageL' class="loginform__container_msg"></span>
         </div>
         <div class="btn">
